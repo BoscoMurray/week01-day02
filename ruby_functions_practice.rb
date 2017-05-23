@@ -56,6 +56,11 @@ def volume_of_cube(side_length)
   return side_length ** 3
 end
 
-
+def volume_of_sphere(radius)
+  fraction = Rational('4/3')
+  pi = Math::PI
+  volume = fraction * pi * radius ** 3
+  return volume.round(2)
+end
 
 
