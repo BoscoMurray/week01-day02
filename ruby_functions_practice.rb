@@ -9,3 +9,7 @@ end
 def subtract(number_01, number_02)
   return number_01 - number_02 
 end
+
+def multiply(number_01, number_02)
+  return number_01 * number_02 
+end
