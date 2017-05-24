@@ -42,14 +42,8 @@ def number_to_full_month_name(number)
 end
 
 def number_to_short_month_name(number)
-  case number
-  when 1 
-    return "Jan"
-  when 3 
-    return "Mar"
-  when 9 
-    return "Sep"
-  end
+  long_month_name = number_to_full_month_name(number)
+  return long_month_name[0..2]
 end
 
 def volume_of_cube(side_length)
